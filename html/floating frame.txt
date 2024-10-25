@@ -1,0 +1,8 @@
+<html>
+<body>
+<h2>floating frame</h2>
+<iframe src="table.html"width="200%"height="100%">
+</iframe>
+</iframe>
+</body>
+</html>
