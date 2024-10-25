@@ -1,0 +1,7 @@
+<html>
+<body>
+<h1>image page</h1>
+<img src="mahagony.jpg">
+<p><a href="mixed frame.html">back to mainpage</p>
+</body>
+</html>
