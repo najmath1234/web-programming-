@@ -1,0 +1,31 @@
+<html>
+<head>
+</head>
+<body>
+	<h1>JavaScript String and Math Functions</h1>
+	<h2>String Functions</h2>
+	<p> String Length of 'Happy Life': <span id="stringLength"></span></p>
+	<p> Convert to uppercase of "peace": <span id="toUpper"></span></p>
+	<p> Does Hello World includes World  : <span id="includes"></span></p>
+	<p> Letter at index first position of Justice: <span id="charAt"></span></p>
+	<p> Slice first three letters of Webpage:<span id="slice"></span></p>
+	<h2>Math Functions</h2>
+	<p>1. Math.round of 2.7: <span id="round"></span></p>
+	<p>2. Math.random:<span id="random"></span></p>
+	<p>3. Math.sqrt of 289:<span id="sqrt"></span></p>
+	<p>4. Math.max: maximum value in(100, 20, 15, 40):<span id="max"></span></p>
+	<p>5. Math.min: minimum value in(100, 20, 15, 40):<span id="min"></span></p>
+	<script>
+		document.getElementById('stringLength').innerText = "Happy Life".length; 
+		document.getElementById('toUpper').innerText = "peace".toUpperCase(); 
+		document.getElementById('includes').innerText = "Hello World".includes("World"); 
+		document.getElementById('charAt').innerText = "Justice".charAt(1); 
+		document.getElementById('slice').innerText = "Webpage".slice(0, 3)
+		document.getElementById('round').innerText = Math.round(2.7); 
+		document.getElementById('random').innerText = Math.random();
+		document.getElementById('sqrt').innerText = Math.sqrt(289); 
+		document.getElementById('max').innerText = Math.max(100, 20, 15, 40);
+		document.getElementById('min').innerText = Math.min(100, 20, 15, 40);
+	</script>
+</body>
+</html>
