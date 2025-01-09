@@ -1,0 +1,103 @@
+<html>
+<head>
+    <title>Sign Up Form</title>
+    <style>
+		body {
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+			padding: 20px;
+			margin: 0;
+		}
+
+		fieldset {
+			font-size: 20px;
+			width: 70%;
+			padding: 25px;
+			border-radius: 8px;
+			border: 1px solid #ccc;
+			background-color: #f9f9f9;
+		}
+
+		input[type="text"], input[type="email"], input[type="password"], input[type="tel"], textarea, button {
+			width: 100%;
+			padding: 12px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			margin-bottom: 10px;
+		}
+
+		.error {
+			color: red;
+			font-size: 12px;
+		}
+
+		.highlight {
+			border-color: red;
+		}
+	</style>
+</head>
+<body>
+
+    <form id="signupForm" onsubmit="return validate_form()">
+        <fieldset>
+            <legend><h1>SIGN UP</h1></legend>
+
+            <!-- First Name -->
+            <label>First Name :</label><br>
+            <input type="text" id="first_name" required><br>
+            <span id="first_name_error" class="error"></span><br>
+
+            <!-- Last Name -->
+            <label>Last Name :</label><br>
+            <input type="text" id="last_name" required><br>
+            <span id="last_name_error" class="error"></span><br>
+
+            <!-- Address -->
+            <label>Address :</label><br>
+            <textarea id="address" required cols="50"></textarea><br>
+            <span id="address_error" class="error"></span><br>
+
+            <!-- Gender -->
+            <label>Gender :</label><br>
+            <input type="radio" value="Male" name="gender" required><label for="Male">Male</label>
+            <input type="radio" value="Female" name="gender" required><label for="Female">Female</label>
+            <input type="radio" value="Others" name="gender" required><label for="Others">Others</label><br>
+            <span id="gender_error" class="error"></span><br>
+
+            <!-- Email -->
+            <label>E-mail :</label><br>
+            <input type="email" id="email" required><br>
+            <span id="email_error" class="error"></span><br>
+
+            <!-- Mobile Number -->
+            <label>Mobile Number :</label><br>
+            <input type="tel" id="phone" required><br>
+            <span id="phone_error" class="error"></span><br>
+
+            <!-- Username -->
+            <label>Username :</label><br>
+            <input type="text" id="username" required><br>
+            <span id="username_error" class="error"></span><br>
+
+            <!-- Password -->
+            <label>Set Password :</label><br>
+            <input type="password" id="password" required><br>
+            <span id="password_error" class="error"></span><br>
+
+            <!-- Confirm Password -->
+            <label>Confirm Password :</label><br>
+            <input type="password" id="confirm_password" required><br><br>
+
+            <span id="confirm_password_error" class="error"></span><br><br>
+
+            <!-- Submit Button -->
+            <center><button type="submit" style="background-color:#4D600E;">Sign Up</button></center>
+        </fieldset>
+    </form>
+
+    <script src="validation.js"></script>
+
+</body>
+</html>
