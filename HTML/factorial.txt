@@ -1,0 +1,29 @@
+<?php
+
+ 
+
+function factorial($number) {
+
+    if ($number < 0) {
+
+        return "Factorial is not defined for negative numbers.";
+
+    }
+
+    $factorial = 1;
+
+    for ($i = 1; $i <= $number; $i++) {
+
+        $factorial *= $i;
+
+    }
+
+    return $factorial;
+
+}
+
+ $number = 3; 
+
+ echo "The factorial of $number is: " . factorial($number);
+
+?>

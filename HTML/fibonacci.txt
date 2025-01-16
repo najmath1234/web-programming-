@@ -1,0 +1,60 @@
+<?php
+
+ 
+
+function fibonacci($terms) {
+
+    if ($terms < 1) {
+
+        return "Please enter a positive integer.";
+
+    }
+
+ 
+
+    $fibonacciSeries = [];
+
+    $a = 0;
+
+    $b = 1;
+
+ 
+
+    for ($i = 0; $i < $terms; $i++) {
+
+        $fibonacciSeries[] = $a;
+
+        $next = $a + $b;
+
+        $a = $b;
+
+        $b = $next;
+
+    }
+
+ 
+
+    return $fibonacciSeries;
+
+}
+
+ 
+
+ 
+
+$terms = 20; 
+
+ 
+
+
+$fibonacciSeries = fibonacci($terms);
+
+ 
+
+ 
+
+echo "Fibonacci series up to $terms terms:<br>";
+
+echo implode(", ", $fibonacciSeries);
+
+?>

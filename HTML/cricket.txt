@@ -1,0 +1,54 @@
+ <html>
+<head>
+<style>
+
+        table {
+    width: 50%;
+}
+
+        th, td {
+
+            border: 1px solid #ddd;
+    text-align: center;
+
+        }
+
+        th {
+
+            background-color: #4CAF50;
+
+            color: white;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+  <table>
+
+        <tr>
+
+          <th>Player Name</th>
+
+        </tr>
+
+        <?php
+
+        $players = ["Virat Kohli", "Rohit Sharma", "MS Dhoni", "Sachin Tendulkar", "Jasprit Bumrah", "Ravindra Jadeja", "KL Rahul"];
+        foreach ($players as $player ) {
+    echo "<tr>";
+    echo "<td>" . $player. "</td>";
+    echo "</tr>";
+
+        }
+
+        ?>
+
+    </table>
+
+</body>
+
+</html>
